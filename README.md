@@ -4,7 +4,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### `npm install -g firebase-tools`
 
-Google Firebase BaaS used for authentication, Database, 
+Google firebase BaaS used for authentication, Database, 
+
+### `npm add firebase`
+
+Add firebase to project
 
 ### `npm install @material-ui/core`
 

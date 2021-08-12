@@ -20,7 +20,7 @@ function Feed()  {
 /* Access the collection in Firebase (the firestore, noSQL db): */
     useEffect( () => {
 
-    /* SnapShot is a real-time listerner, listens for the 'posts'  data*/
+    /* SnapShot is a real-time listener, listens for the 'posts'  data*/
         /* .orderBy('timestamp', "desc") uses the timestamp to order */
         /* .docs = docs in the colleciton */
 
@@ -73,7 +73,6 @@ function Feed()  {
 
                 <div className="feed__inputOptions">
 
-                    {/*  */}
                     <InputOption title="Photo" Icon={ImageIcon} color="#70B5F9" />
                     <InputOption title="Video" Icon={SubscriptionsIcon} color="#E7A33E" />
                     <InputOption title="Event" Icon={EventNoteIcon} color="#C0CBCD" />

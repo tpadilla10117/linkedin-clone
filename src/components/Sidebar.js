@@ -5,12 +5,12 @@ import { Avatar } from '@material-ui/core';
 function Sidebar () {
 
 /*  Function to Pass in Hashtags as JSX: */
-    const recentItem = (topic) => {
+    const recentItem = (topic) => (
         <div className="sidebar__recentItem">
             <span className="sidebar__hash">#</span>
             <p>{ topic }</p>
         </div>
-    }
+    );
 
 
     return (

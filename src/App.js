@@ -6,7 +6,7 @@ import { Header } from './utils';
 function App() {
   return (
     <div className="app">
-      <h1>Lets build a LinkedIn Clone</h1>
+      
 
 
       {/* Header Component lives here: */}

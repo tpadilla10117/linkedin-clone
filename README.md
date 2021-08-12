@@ -6,6 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Google Firebase BaaS used for authentication, Database, 
 
+### `npm install @material-ui/core`
+
+Material UI library for custom components
+
 ## Available Scripts
 
 In the project directory, you can run:

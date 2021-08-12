@@ -3,3 +3,5 @@
     export { default as Header } from './components/Header.js';
 
     export { default as HeaderOption} from './components/HeaderOption.js';
+
+    export { default as Sidebar } from './components/Sidebar.js';

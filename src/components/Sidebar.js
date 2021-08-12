@@ -3,11 +3,22 @@ import './Sidebar.css';
 import { Avatar } from '@material-ui/core';
 
 function Sidebar () {
+
+/*  Function to Pass in Hashtags as JSX: */
+    const recentItem = (topic) => {
+        <div className="sidebar__recentItem">
+            <span className="sidebar__hash">#</span>
+            <p>{ topic }</p>
+        </div>
+    }
+
+
     return (
+
         <div className="sidebar">
             <div className="sidebar__top">
 
-                <img src=" alt=" />
+                <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-1.2.1&ixid=MXwxMjA3fD88MMxleH8sb3JlLWZlZWR8MXx8fGVufD88fHw%3D&w=1000&q=80" alt="" />
                 <Avatar className="sidebar__avatar"/>
                 <h2>Trinidad Padilla</h2>
                 <h4>tpadilla101@live.com</h4>
@@ -17,15 +28,25 @@ function Sidebar () {
             <div className="sidebar__stats">
 
                 <div className="sidebar__stat">
-
+                    <p>Who viewed you</p>
+                    <p className="sidebar__statNumber">2,534</p>
                 </div>
                 
                 <div className="sidebar__stat">
-
+                    <p>Views on post</p>
+                    <p className="sidebar__statNumber">2,400</p>
                 </div>
-                
+
             </div>
 
+            <div className="sidebar__bottom">
+                <p>Recent</p>
+                {recentItem('reactjs') }
+                {recentItem('programming') }
+                {recentItem('softwareengineering') }
+                {recentItem('design') }
+                {recentItem('developer') }
+            </div>
 
         </div>
     );

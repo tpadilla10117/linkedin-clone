@@ -7,6 +7,8 @@ import ShareOutlinedIcon from "@material-ui/icons/ShareOutlined";
 import SendOutlinedIcon from "@material-ui/icons/SendOutlined";
 import InputOption from './InputOption';
 
+/*  Post component takes in props from it's parent, Feed.js: */
+
 function Post ( { name, description, message, photoUrl } ) {
     return (
         <div className="post">
@@ -14,19 +16,14 @@ function Post ( { name, description, message, photoUrl } ) {
                 <Avatar />
 
                 <div className="post__info">
-
                     <h2>{ name }</h2>
                     <p> { description} </p>
-
                 </div>
-
 
             </div>
 
             <div className="post__body">
-
                 <p> { message } </p>
-
             </div>
 
             <div className="post__buttons">

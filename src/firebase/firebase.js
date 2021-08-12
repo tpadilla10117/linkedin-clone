@@ -10,10 +10,10 @@ import firebase from 'firebase';
         appId: "1:604893630753:web:db778bd34ff2bef51c6e60"
     };
 
-/* This connects our firebase project: */
+/* This connects our firebase project using the initializeApp() function: */
     const firebaseApp = firebase.initializeApp(firebaseConfig);
 
-/* Connecting the database from firebase: */
+/* Connecting the database (firestore) from firebase: */
     const db = firebaseApp.firestore();
 
 /* Connecting the firebase authentication: */

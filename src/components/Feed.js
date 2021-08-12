@@ -17,12 +17,14 @@ function Feed()  {
     const [ input, setInput ] = useState("");
     const [ posts, setPosts ] = useState( [] ); 
 
-/* Access the collection in Firebase: */
+/* Access the collection in Firebase (the firestore, noSQL db): */
     useEffect( () => {
 
     /* SnapShot is a real-time listerner, listens for the 'posts'  data*/
-        /* .orderBy('timestamp', "desc") uses the timeStamp to order */
-        db.collection("posts")
+        /* .orderBy('timestamp', "desc") uses the timestamp to order */
+        /* .docs = docs in the colleciton */
+
+        db.collection("posts") //call the collections 'posts'
         .orderBy('timestamp', "desc")
         .onSnapshot( snapshot => (
             setPosts( snapshot.docs.map( doc => (
@@ -36,6 +38,8 @@ function Feed()  {
     }, []);
 
 /* Post submission function -> occurs when submit on form: */
+    /* This is where we define the data in a 'post' collection*/
+
     const sendPost = event => {
         event.preventDefault();
 

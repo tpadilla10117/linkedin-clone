@@ -7,3 +7,5 @@
     export { default as Sidebar } from './components/Sidebar.js';
 
     export { default as Feed } from './components/Feed';
+
+    export { default as InputOption } from './components/InputOption.js';

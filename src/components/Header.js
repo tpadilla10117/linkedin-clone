@@ -22,7 +22,7 @@ function Header() {
                     {/* SearchIcon From MAterial UI */}
                     <SearchIcon />
 
-                    <input type="text" />
+                    <input type="text" placeholder="Search" />
 
                 </div>
 

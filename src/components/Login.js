@@ -35,7 +35,8 @@ function Login() {
                         uid: userAuth.user.uid,
                         displayName: name,
                         photoUrl: profilePic,
-                }));
+                    })
+                );
             });
             
         }).catch( (error) => alert(error) );

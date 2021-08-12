@@ -10,6 +10,10 @@ Google Firebase BaaS used for authentication, Database,
 
 Material UI library for custom components
 
+### `npm install @material-ui/icons`
+
+Material UI Icon Library
+
 ## Available Scripts
 
 In the project directory, you can run:

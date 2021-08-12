@@ -11,3 +11,5 @@
     export { default as InputOption } from './components/InputOption.js';
 
     export { default as Post } from './components/Post.js';
+
+    export { default as Login } from './components/Login.js';

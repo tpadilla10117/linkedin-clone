@@ -1,29 +1,32 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+/* Here we define a userSlice in Redux: */
+
 export const userSlice = createSlice({
   name: "user",
   initialState: {
     user: null
   },
 
+/* reducers = objects that are portions of the state */
+/* actions = something user does - they have a payload (object we pass along) */
   reducers: {
-    increment: (state) => {
-      state.value += 1;
+    login: (state, action) => {
+      state.value = action.payload;
     },
 
-    decrement: (state) => {
-      state.value -= 1;
+    logout: (state) => {
+      state.user = null; //set user to null
     },
 
-    incrementByAmount: (state, action) => {
-      state.value += action.payload;
-    },
   },
 
 });
 
-export const { increment, decrement, incrementByAmount } = userSlice.actions;
+//export the reducers
+export const { login, logout } = userSlice.actions; 
 
-export const selectUser = (state) => state.user.user;
+// Selectors:
+export const selectUser = (state) => state.user;
 
 export default userSlice.reducer;

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './App.css';
-import { Header, Sidebar } from './utils';
+import { Header, Sidebar, Feed } from './utils';
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
 
       <div className="app__body">
         <Sidebar />
+        <Feed />
       </div>
       
 

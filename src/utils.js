@@ -5,3 +5,5 @@
     export { default as HeaderOption} from './components/HeaderOption.js';
 
     export { default as Sidebar } from './components/Sidebar.js';
+
+    export { default as Feed } from './components/Feed';

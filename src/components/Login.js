@@ -26,7 +26,7 @@ function Login() {
         auth.createUserWithEmailAndPassword(email, password).then( (userAuth) => {
             userAuth.user.updateProfile({
                 displayName: name,
-                photoURL: profilePic,
+                photoUrl: profilePic,
             })
             .then( () => {
                 dispatch(
@@ -45,6 +45,17 @@ function Login() {
 /* This function allows users to log-in: */
     const loginToApp = (event) => {
         event.preventDefault();
+
+        auth.signInWithEmailAndPassword(email, password).then(userAuth => {
+            dispatch(
+                login({
+                    email: userAuth.user.email,
+                    uid: userAuth.user.uid,
+                    displayName: userAuth.user.displayName,
+                    profileUrl: userAuth.user.photoURL,
+                })
+            );
+        }).catch( (error) => alert(error));
 
     };
 
